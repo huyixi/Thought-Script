@@ -25,7 +25,7 @@ thought="$1"
 
 current_datetime=$(date +"%Y-%m-%d %H:%M:%S")
 
-formatted_thought="- $thought"$'\n'"$current_datetime"$'\n'
+formatted_thought="- $thought. $current_datetime"
 
 if [ ! -f "$file_path" ]; then
   touch "$file_path"
